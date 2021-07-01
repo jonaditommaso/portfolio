@@ -1,0 +1,43 @@
+.header {
+    display: inline-flex;
+    width: 100%;
+    height: 70px;
+}
+
+.links {
+    margin-left: auto;
+    height: fit-content;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 25px;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.link:hover {
+    transition: 0.3s;
+    color: #ed6c87;
+    text-decoration: underline solid #ed6c87;
+}
+
+.homeIcon {
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.homeIcon:hover {
+    transition: 0.3s;
+    color: #ed6c87;
+    text-decoration: underline solid #ed6c87;
+}
+
+a{
+    display: inline-flex;
+}

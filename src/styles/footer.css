@@ -1,0 +1,22 @@
+.footer {
+    display:flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.footer:hover {
+    transition: 1.5s ;
+    background-color: #ed6c87;
+}
+
+.images {
+    display: inline-block; 
+    align-items: center;
+    justify-content: center;
+}
+
+.images > a {
+    margin: 15px;
+}

@@ -1,0 +1,129 @@
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    flex-direction: column;
+}
+
+.image {
+    width: 219px;
+    height: 350px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.content > figcaption {
+    color: white;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    padding: 20px;
+}
+
+.description {
+    border: solid 4px #ed6c87;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10%;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+.text {
+    font-size: 1em;
+    color: white;
+}
+
+.movingText {
+    margin-top: 100px;
+    font-size: 1em;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.movingText:hover {
+    cursor: default;
+}
+
+.movingText__One {
+    animation: bounce 1.5s alternate ease-in-out;
+    margin-bottom: 100px;
+}
+
+.movingText__One:hover {
+    color: #ed6c87;
+}
+
+.movingText__Two {
+    animation: bounce 2s alternate ease-in-out;
+    margin-bottom: 100px;
+}
+
+.movingText__Two:hover {
+    color: #ed6c87;
+}
+
+.movingText__Three {
+    animation: bounce 2.5s alternate ease-in-out;
+    margin-bottom: 100px;
+}
+
+.movingText__Three:hover {
+    color: #ed6c87;
+}
+
+.movingText__Four {
+    animation: bounce-reverse 3s alternate ease-in-out;
+    margin-bottom: 100px;
+}
+
+.movingText__Four:hover {
+    color: #ed6c87;
+}
+
+.movingText__Five {
+    animation: bounce-reverse 3.5s alternate ease-in-out;
+    margin-bottom: 100px;
+}
+
+.movingText__Five:hover {
+    color: #ed6c87;
+}
+
+.movingText__Six {
+    animation: bounce-reverse 4s alternate ease-in-out;
+    margin-bottom: 100px;
+}
+
+.movingText__Six:hover {
+    color: #ed6c87;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateX(-1000%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes bounce-reverse {
+    0% {
+      transform: translateX(1000%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }

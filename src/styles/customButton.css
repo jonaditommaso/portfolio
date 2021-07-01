@@ -1,0 +1,10 @@
+.learnMore > Button {
+    color: white;
+    border: solid 1px #86d9f3;
+    margin-bottom: 20px;
+}
+
+.learnMore > button:hover {
+    transition: 0.3s;
+    background-color: #86d9f3;
+}
