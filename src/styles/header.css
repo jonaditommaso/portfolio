@@ -17,7 +17,23 @@
     color: black;
     margin: 25px;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.link__projects {
+    color: #ed6c87;
+} 
+
+.link__skills {
+    color: #ed6c87;
+}
+
+.link__profile {
+    color: #ed6c87;
+}
+
+.link__cv {
+    color: #ed6c87;
 }
 
 .link:hover {
@@ -30,6 +46,10 @@
     color: black;
     display: flex;
     padding: 20px;
+}
+
+.homeActive {
+    color: #ed6c87;
 }
 
 .homeIcon:hover {

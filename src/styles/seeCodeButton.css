@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.myButton > Button {
+    color: white;
+    background-color: #160e08;
+}
+
+.myButton > Button:hover {
+    background-color: #ed6c87;
+}
+
+.seeCodeTextButton{
+    margin-left: 5px;
+}

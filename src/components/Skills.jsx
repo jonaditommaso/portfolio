@@ -1,9 +1,11 @@
 import '../styles/skills.css';
 import GoTopButton from './GoTopButton';
+import Separator from './Separator';
 
 const Skills = () => {
     return ( 
         <>
+
             <div className="images">
 
                 <figure>
@@ -23,6 +25,8 @@ const Skills = () => {
                      
             </div>
 
+            <Separator/>
+
             <div className="images">
 
                 <figure>
@@ -41,12 +45,18 @@ const Skills = () => {
                 </figure>
                     
                 <figure>
-                    <img src="/assets/img/icons/node.png" alt="node" style={{width: '170px'}}/>
-                    <figcaption>NODE JS</figcaption>
+                    <img src="/assets/img/icons/next.png" alt="next" style={{width: '170px'}}/>
+                    <figcaption>NEXT JS</figcaption>
                 </figure>
 
                 
             </div>
+
+            <Separator />
+
+            {/* <div className="images">
+                
+            </div> */}
 
             <div className="images">
                 <figure>
@@ -63,9 +73,27 @@ const Skills = () => {
                     <img src="/assets/img/icons/express.png" alt="express" style={{width: '170px'}}/>
                     <figcaption>EXPRESS</figcaption>
                 </figure>
+
+                
+                <figure>
+                    <img src="/assets/img/icons/node.png" alt="node" style={{width: '170px'}}/>
+                    <figcaption>NODE JS</figcaption>
+                </figure>
             </div>
+
+            <Separator />
             
             <div className="images">
+
+                <figure>
+                    <img src="/assets/img/icons/python.png" alt="python" style={{width: '140px'}}/>
+                    <figcaption>PYTHON</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="/assets/img/icons/django.png" alt="django" style={{width: '180px', height: '110px'}}/>
+                    <figcaption>DJANGO</figcaption>
+                </figure>
 
                 <figure>
                     <img src="/assets/img/icons/git.png" alt="git" style={{height: '110px'}} />
@@ -73,9 +101,16 @@ const Skills = () => {
                 </figure>
 
                 <figure>
-                    <img src="/assets/img/icons/material-ui.png" alt="material-ui" style={{height: '110px', width: '130px'}} />
-                    <figcaption>MATERIAL-UI</figcaption>
+                    <img src="/assets/img/icons/firebase.png" alt="firebase"/>
+                    <figcaption>FIREBASE</figcaption>
                 </figure>
+
+                
+            </div>
+
+            <Separator />
+
+            <div className="images">
 
                 <figure>
                     <img src="/assets/img/icons/sass.png" alt="sass" style={{height: '110px'}} />
@@ -83,10 +118,24 @@ const Skills = () => {
                 </figure>
 
                 <figure>
-                    <img src="/assets/img/icons/firebase.png" alt="firebase"/>
-                    <figcaption>FIREBASE</figcaption>
+                    <img src="/assets/img/icons/material-ui.png" alt="material-ui" style={{height: '110px', width: '130px'}} />
+                    <figcaption>MATERIAL-UI</figcaption>
                 </figure>
+
+                
+                <figure>
+                    <img src="/assets/img/icons/bootstrap.png" alt="bootstrap" style={{height: '110px',  width: '150px'}} />
+                    <figcaption>BOOTSTRAP</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="/assets/img/icons/react-bootstrap.png" alt="react-bootstrap" style={{height: '110px'}} />
+                    <figcaption>REACT BOOTSTRAP</figcaption>
+                </figure>
+
             </div>
+
+            <Separator />
             
             <GoTopButton />
             

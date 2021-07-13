@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/about.css';
 import CustomButton from '../utils/CustomButton.jsx';
 import GoTopButton from './GoTopButton';
+import Separator from './Separator';
 
 const About = () => {
 
@@ -46,6 +47,8 @@ const About = () => {
             </div>
 
         </div>
+
+        <Separator />
 
         <GoTopButton />
 

@@ -25,3 +25,16 @@
     font-size: 1em;
     color: black;
 }
+
+.project__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: inline-flex;
+    align-items: baseline;
+}
+

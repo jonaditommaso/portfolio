@@ -12,3 +12,7 @@
 .images > figure {
     color: black;
 }
+
+figcaption {
+    font-weight: 300;
+}

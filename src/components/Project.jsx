@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import '../styles/project.css';
 import CustomButton from '../utils/CustomButton.jsx';
 import GoTopButton from './GoTopButton';
+import SeeCodeButton from './SeeCodeButton';
 
-const Project = ({image, alt, href, description}) => {
+const Project = ({image, alt, href, description, codeDirection}) => {
 
     const [showDescription, setShowDescription] = useState('none');
 
@@ -13,9 +14,13 @@ const Project = ({image, alt, href, description}) => {
                 <img src={image} alt={alt} />
             </a>
 
-            <>
-                <CustomButton handleClick={setShowDescription} />
-            </>    
+            <div className="project__buttons">
+                <div className="buttons">
+                    <CustomButton handleClick={setShowDescription} />
+                    <SeeCodeButton code={codeDirection} />
+                </div>
+                
+            </div>    
 
             <div 
                 className="description" 

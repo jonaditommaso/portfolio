@@ -1,0 +1,7 @@
+hr {
+    border: 0; 
+    width: 75%;
+    height: 2px; 
+    text-align: center; 
+    background-image: linear-gradient(to left, #fff, rgb(150, 145, 145), #fff);
+}
