@@ -11,12 +11,19 @@
     background-color: #ed6c87;
 }
 
-.images {
-    display: inline-block; 
+.footer__images {
+    display: flex; 
     align-items: center;
     justify-content: center;
 }
 
-.images > a {
+.footer__images > a {
     margin: 15px;
+    align-items: center;
+}
+
+@media (max-width: 530px) {
+    .footer__images > a {
+      margin: 5px;
+    }
 }

@@ -3,7 +3,7 @@ import '../styles/footer.css';
 const Footer = () => {
     return ( 
             <footer className="footer">
-                <figure className="images">
+                <figure className="footer__images">
                     
                     <a href="https://github.com/jonaditommaso" target="_blank" rel="noreferrer">
                         <img src="/assets/img/github.png" alt="github" style={{width: '35px', height: '35px'}} />

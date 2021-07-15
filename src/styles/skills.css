@@ -1,18 +1,40 @@
-.images {
+.skills {
     display: flex;
+    justify-content: center;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-.images > figure > img {
+.skills > figure > img {
     height: 100px;
     width: 100px;
 }
 
-.images > figure {
+.skills > figure {
     color: black;
 }
 
 figcaption {
     font-weight: 300;
 }
+
+.skills__direction {
+    display: inline-flex;
+}
+
+.skills__direction > figure > img {
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 670px) {
+    .skills__direction {
+        flex-direction: column;
+    }
+} 
+
+@media (max-width: 500px) {
+    .skills {
+        flex-direction: column;
+    }
+} 

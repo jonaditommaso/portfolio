@@ -5,11 +5,11 @@
 }
 
 .links {
-    margin-left: auto;
+    margin: auto;
     height: fit-content;
     display: inline-flex;
-    justify-content: flex-end;
     align-items: flex-end;
+    margin-left: 60%;
 }
 
 .link {
@@ -61,3 +61,43 @@
 a{
     display: inline-flex;
 }
+
+
+@media (max-width: 1150px) {
+    .links {
+        margin: auto;
+        margin-left: 50%;
+    }
+} 
+
+@media (max-width: 900px) {
+    .links {
+        margin: auto;
+        margin-left: 25%;
+    }
+} 
+
+@media (max-width: 740px) {
+    .links {
+        margin: auto;
+        margin-left: 10%;
+    }
+} 
+
+@media (max-width: 520px) {
+    .links {
+        margin-left: 2%;
+    }
+} 
+
+@media (max-width: 400px) {
+    .link {
+        font-size: 0.7em;
+        margin: 15px;
+        font-weight: 300;
+    }
+
+    .homeIcon > :first-child {
+        font-size: 1.5em;
+    }
+} 

@@ -38,3 +38,17 @@
     align-items: baseline;
 }
 
+
+@media (max-width: 710px) {
+    .projects > a > img {
+        height: 200px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects > a > img {
+        height: 170px;
+        width: 250px;
+    }
+}

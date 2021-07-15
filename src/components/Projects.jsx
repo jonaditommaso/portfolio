@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from 'react';
 import Project from './Project';
 import '../styles/projects.css';
 import { AMAZON, COVID, POKEMON } from '../utils/descriptionProject';
-import Separator from './Separator'
+import Separator from './Separator';
 
 const Projects = () => {
-   
-   const [changeFocus, setChangeFocus] = useState('');
 
-   useEffect(() => {
-      
-      setChangeFocus('projects__changeFocus');
-
-      return () => {
-         setChangeFocus('');
-      }
-   }, [])
-
-
-    return ( 
-         <div className={`projects ${changeFocus}`}>
+   return ( 
+         <div className="projects">
              <Project 
                 image="/assets/img/amazon.png" 
                 alt="amazon" 
@@ -44,7 +31,7 @@ const Projects = () => {
 
              <Separator />
         </div>
-    );
+   );
 }
  
 export default Projects;
