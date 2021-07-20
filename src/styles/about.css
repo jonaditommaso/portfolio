@@ -29,6 +29,7 @@
 }
 
 .description {
+    background-color: #eaf1fe;
     border: solid 4px #ed6c87;
     flex-direction: column;
     padding: 15px;
