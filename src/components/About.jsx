@@ -45,10 +45,13 @@ const About = () => {
                 I consider myself an enthusiastic, curious and resilient person. If something is difficult for me, I look for a way to understand it and solve it no matter how much effort I have to make or how much personal time it demands of me. 
                 <br/>
                 <br/>
-                More than a year ago, I immersed myself in the world of software for various reasons. First of all because I realized that I love the challenge, where I put myself to the test day by day; secondly because my curiosity and enthusiasm is fueled by such a vast and fascinating industry. And mainly because I realized that software positively influences people's quality of life, and I want to be part of it. 
+                I realized that software positively influences people's quality of life, and I want to be part of it.
                 <br/>
                 <br/>
-                My goals are summarized in the desire to be able to obtain a job opportunity that allows me to continue learning, continue growing and continue advancing. I hope we can get to know each other, and you will see how willing I am to give my best, waiting to be able to match with your goals.
+                My current goals are summarized in the desire to be able to obtain a job opportunity that allows me to continue learning, continue growing and continue advancing. 
+                <br/>
+                <br/>
+                I hope we can get to know each other, and you will see how willing I am to give my best, waiting to be able to match with your goals.
             </div>
 
         </div>

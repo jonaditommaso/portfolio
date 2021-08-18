@@ -47,6 +47,7 @@ const Header = () => {
     }
 
     return ( 
+        <div>
         <div className="header">
             
             <Link className="homeIcon" to='/' onClick={() => linkClicked('home')}>
@@ -65,13 +66,15 @@ const Header = () => {
                 </Link>
 
                 <a className="link"
-                    href="https://drive.google.com/file/d/1rlM1eNOIgBtuccz5nlisraBoe0l_a0cQ/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1uGc5CRabOZZrPdTJG8slbY0-PDfd6EOR/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                 >
                     <span className={changeColorCV} onClick={() => linkClicked('cv')}>CV</span>
                 </a>
             </div>
+        </div>
+        <hr style={{width: '100%'}} />
         </div>
     );
 }

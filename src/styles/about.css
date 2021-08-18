@@ -118,16 +118,16 @@
     100% {
       transform: translateX(0%);
     }
-  }
+}
 
-  @keyframes bounce-reverse {
+@keyframes bounce-reverse {
     0% {
       transform: translateX(1000%);
     }
     100% {
       transform: translateX(0%);
     }
-  }
+}
 
 
   

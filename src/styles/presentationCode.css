@@ -1,0 +1,41 @@
+.presentationCode {
+    display: block;
+    text-align: start;
+    color: white;
+    background-color: #1E1E1E;
+    padding: 3%;
+    font-size: 15px;
+    box-shadow: 5px 5px 17px 7px gray;
+    border-radius: 15px;
+    perspective: 200px;
+    width: 400px;
+    transform: scale3d(1.1, 1.6, 1);
+    margin-top: 35%;
+    margin-left: 45%;
+    font-style: italic;
+    /* transform: scale3d(0.8, 1.7, 5) translate(80px, 100px); */
+    /* color: #289df1 */
+    /* transform: rotate(-5deg) 
+    translate(80px, 200px) 
+    rotate3d(0, 8, 1, 30deg) scale3d(1, 1.5, 5); */
+    /* white-space: nowrap; */
+      /* overflow: hidden;transform: translateY(-50%); */
+}
+
+.finalCode {
+    display: inline-flex;
+    align-items: center;
+}
+.hiredEntry {
+    background-color: #1E1E1E;
+    color: #3676BB;
+    border: none;
+    width: 25px;
+    font-size: 15px;
+    font-style: italic;
+    caret-color: transparent;
+}
+
+.hiredEntry:focus {
+    outline: none;
+}

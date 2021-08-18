@@ -27,7 +27,7 @@ function GoTopButton() {
             <div className={`container ${showButton ? '' : 'hide'}`}>
                 <div className="goTopContainer" onClick={()=> goTop()}>
                     <div className="goTop">
-                        <ExpandLessIcon />
+                        <ExpandLessIcon fontSize="large" />
                     </div>
                 </div>
             </div>
