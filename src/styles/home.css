@@ -62,6 +62,10 @@
   margin: auto;
 }
 
+.home__hr {
+  margin-top: 25px;
+}
+
 @keyframes bounce {
   0% {
     transform: translateX(-100%);
@@ -89,6 +93,10 @@
   }
   .job {
     font-size: 0.7em;
+  }
+
+  .home {
+    flex-direction: column;
   }
 } 
 

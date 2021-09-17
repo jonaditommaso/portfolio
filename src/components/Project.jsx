@@ -15,7 +15,7 @@ const Project = ({image, alt, href, description, codeDirection, title}) => {
                 <img src={image} alt={alt} />
             </a>
 
-            <div><p style={{color: '#ed6c87', margin: '0', fontStyle: 'italic', fontWeight: '600'}}>{title}</p></div>
+            <div><p className="project__title">{title}</p></div>
 
             <div className="project__buttons">
                 <div className="buttons">

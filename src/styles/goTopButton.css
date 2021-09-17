@@ -31,3 +31,9 @@
 .hide {
     display: none;
 }
+
+@media (max-width: 390px) {
+    .goTopContainer {
+        padding: 3px;
+    }
+}

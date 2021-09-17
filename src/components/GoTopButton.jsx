@@ -7,7 +7,7 @@ function GoTopButton() {
     const [showButton, setShowButton] = useState(false);
 
     window.onscroll = () => {
-        if(document.documentElement.scrollTop > 60) {
+        if(document.documentElement.scrollTop > 65) {
             setShowButton(true);
         }
         else {

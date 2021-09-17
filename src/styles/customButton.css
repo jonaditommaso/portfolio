@@ -9,3 +9,9 @@
     transition: 0.3s;
     background-color: #86d9f3;
 }
+
+@media (max-width: 390px) {
+    .learnMore > Button {
+        margin: 3px;
+    }
+}

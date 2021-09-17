@@ -8,7 +8,7 @@
     box-shadow: 5px 5px 17px 7px gray;
     border-radius: 15px;
     perspective: 200px;
-    width: 400px;
+    width: 410px;
     transform: scale3d(1.1, 1.6, 1);
     margin-top: 35%;
     margin-left: 45%;
@@ -30,12 +30,38 @@
     background-color: #1E1E1E;
     color: #3676BB;
     border: none;
-    width: 25px;
+    width: 45px;
     font-size: 15px;
     font-style: italic;
-    caret-color: transparent;
+    caret-color: white;
 }
 
 .hiredEntry:focus {
     outline: none;
+}
+
+@media (max-width: 500px) {
+    .presentationCode {
+        width: 280px;
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        font-size: 10px;
+        box-shadow: 2.5px 2.5px 13px 3.5px gray;
+    }
+
+    .hiredEntry {
+        /* display: flex; */
+        margin-top: 10%;
+        margin-right: 5%;
+        font-size: 10px;
+        width: 28px;
+        /* display: flex; */
+    }
+    .finalCode {
+        margin-top: 0%;
+        display: flex;
+        align-items: flex-end;
+        height: 15px;
+    }
 }

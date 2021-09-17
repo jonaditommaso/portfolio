@@ -1,41 +1,42 @@
+import React, { useEffect, useRef, useState } from 'react';
 import '../styles/presentationCode.css';
 import TypewriterComponent from 'typewriter-effect';
+import { Congratulations } from './Congratulations';
+import { CONSTRUCTOR, CLASS, DEVELOPER, WRITE } from '../utils/wordsToPresentationCode.js';
+import Swal from 'sweetalert2'
 
 const PresentationCode = () => {
 
-    const CONSTRUCTOR = 'constructor';
-    const CLASS = 'class ';
-    const DEVELOPER = 'Developer';
+    const [param, setParam] = useState('');
+
+    const writeParam = useRef(null);
+
+    useEffect(() => {
+        writeParam.current.focus();
+    }, []);
+
+
+    const resultCode = () => {
+        if(param.includes('true')) {
+            return <Congratulations />
+        }
+        else if (param === 'false') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'An error has occurred, please try again.',
+                confirmButtonColor: '#86d9f3',
+                backdrop: false
+            }).then((result) => {
+                if (result.value) {
+                    setParam('');
+                }
+            }); 
+        }
+    }
 
     return ( 
         <div className="presentationCode">
-            {/* <div> */}
-                {/* <TypewriterComponent 
-                    onInit={typewriter => {
-                        typewriter.typeString('<span style="color: #3676BB">class </span>')
-                        .typeString(' <span style="color: #45B791">Developer </span>')
-                        .typeString(' <span style="color: #B078AA">{</span>')
-                        .start()  
-                    }} */}
-
-                    {/* // options={{ */}
-                    {/* //     cursor: null */}
-                    {/* // }} */}
-                    
-                {/* // /> */}
-             {/* </div> */}
-            {/* <div> */}
-                {/* <TypewriterComponent 
-                    onInit={typewriter => {
-                        typewriter.typeString('<span style="color: #3676BB">constructor</span>')
-                        .typeString('<span style="color: #62baf8, marginLeft: 15px">(name<span style="color: white">,</span> technology<span style="color: white">,</span> hired) {</span>')
-                        // .typeString(' <span style="color: #B078AA">{</span>')
-                        .start()  
-                        
-                    }}
-                    
-                /> */}
-            
 
             <div><span style={{color: '#3676BB'}}>{CLASS}</span> <span style={{color: '#45B791'}}>{DEVELOPER}</span> <span style={{color: '#B078AA'}}>{`{`}</span></div>
             <div style={{color: '#62baf8', marginLeft: '15px'}}><span style={{color: '#3676BB'}}>{CONSTRUCTOR}</span> (name<span style={{color: 'white'}}>,</span> technology<span style={{color: 'white'}}>,</span> hired) {`{`}</div>
@@ -48,19 +49,27 @@ const PresentationCode = () => {
             <br />
 
             <div className="finalCode">
-                {/* <span style={{color: '#3676BB'}}>const</span> <span style={{color: '#289df1'}}>hired</span> = <span style={{color: '#3676BB'}}>new </span><span style={{color: '#45B791'}}>{DEVELOPER}</span> <span style={{color: '#B078AA'}}>{`(`}</span><span style={{color: '#AB6647'}}>"Jonathan"</span>, <span style={{color: '#AB6647'}}>"Javascript"</span>, <span style={{color: '#3676BB'}}>true</span><span style={{color: '#B078AA'}}>)</span>; */}
-                <TypewriterComponent 
+                 <TypewriterComponent 
                     onInit={tw => {
-                        tw.typeString('<span style="color: #3676BB">const </span><span style="color: #289df1">hired </span> = <span style="color: #3676BB">new </span><span style="color: #45B791">Developer </span><span style="color: #B078AA">(</span><span style="color: #AB6647">"Jonathan"</span>, <span style="color: #AB6647">"Javascript"</span>, ')
+                        tw.typeString(WRITE)
                         .start() 
                     }}
 
                     options={{
-                        delay: 70
+                        delay: 70,
+                        cursor: null
                     }}
                 />
-                <input className="hiredEntry"/>
+                <input 
+                    className="hiredEntry" 
+                    maxLength="7" 
+                    ref={writeParam} 
+                    value={param}
+                    onChange={e => setParam(e.target.value)} 
+                /> 
+                
             </div>
+            {resultCode()}
         </div>
     );
 }
