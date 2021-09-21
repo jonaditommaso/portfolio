@@ -100,8 +100,19 @@
   }
 } 
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   .presentation {
-    font-size: 3em;
+    font-size: 3em !important
+  }
+} 
+
+
+@media (max-width: 1030px) {
+  .presentation {
+    font-size: 5em;
+  }
+
+  .home {
+    flex-direction: column;
   }
 } 

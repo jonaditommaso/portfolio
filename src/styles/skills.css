@@ -12,14 +12,17 @@
     width: 100px;
 } */
 
-.skill {
-    width: 143px;
+
+/* CAMBIAR EL WIDTH, CERCANO A 200. Y AGREGAR UN MARGIN ALREDEDOR DEL 4%. EDITAR ADEMAS EL STYLE DE C/U */
+.skill { 
+    width: 193px;
     height: 100px;
     box-shadow: 3px 4px 10px #979797;
     border-radius: 10%;
     padding: 5px;
     background-color: white;
     transition: 0.3s;
+    margin: 2%;
 }
 
 /* .skills__wrap {
@@ -54,6 +57,7 @@ figcaption {
     margin-top: 2%;
     margin-bottom: 2%;
     justify-content: center;
+    align-items: center;
 }
 
 .skills__wrapResponsive {
@@ -62,7 +66,7 @@ figcaption {
 }
 
 .wrapSkill {
-    margin: auto;
+    /* margin: auto; */
 }
 
 /* .skills__direction > figure > img {
@@ -75,12 +79,12 @@ figcaption {
         flex-direction: column;
     }
 
-    .skill {
+    /* .skill {
         margin: 4%;
-    }
+    } */
 }
 
-@media (max-width: 670px) {
+@media (max-width: 1030px) {
     .skills__direction {
         flex-direction: column;
     }

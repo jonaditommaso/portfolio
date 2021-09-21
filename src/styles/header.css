@@ -72,14 +72,14 @@ a{
     }
 } 
 
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
     .links {
         margin: auto;
         margin-left: 25%;
     }
 } 
 
-@media (max-width: 740px) {
+@media (max-width: 770px) {
     .links {
         margin: auto;
         margin-left: 10%;
@@ -92,7 +92,7 @@ a{
     }
 } 
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
     .link {
         font-size: 0.7em;
         margin: 15px;
