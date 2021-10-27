@@ -10,7 +10,7 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app__container">
       <Router history={history}>
         <Header />
         <Switch>

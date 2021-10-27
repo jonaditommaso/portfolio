@@ -66,11 +66,11 @@ const Header = () => {
                 </Link>
 
                 <a className="link"
-                    href="https://drive.google.com/file/d/1aDWWNUJ5BMMGwLpcaMZwze9Igtbzs0iF/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1jDv_4S3xEnTIirRuUVy5NhIKPVxBfhls/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <span className={changeColorCV} onClick={() => linkClicked('cv')}>CV</span>
+                    <span className={changeColorCV} onClick={() => linkClicked('cv')}>RESUME</span>
                 </a>
             </div>
         </div>

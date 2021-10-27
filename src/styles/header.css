@@ -10,41 +10,60 @@
     display: inline-flex;
     align-items: flex-end;
     margin-left: 60%;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
 }
 
 .link {
     text-decoration: none;
-    color: black;
-    margin: 25px;
+    color: white;
+    margin: 20px;
     font-size: 1em;
     font-weight: 400;
-    transition: 0.3s;
+    transition: 0.4s;
+    padding: 7px;
+    border-radius: 2px;
 }
 
 .link__projects {
     color: #ed6c87;
 } 
+.link__projects:hover {
+    color: white;
+}
 
 .link__skills {
     color: #ed6c87;
+}
+.link__skills:hover {
+    color: white;
 }
 
 .link__profile {
     color: #ed6c87;
 }
+.link__profile:hover {
+    color: white;
+}
 
 .link__cv {
     color: #ed6c87;
+    /* text-decoration: line-through; */
+}
+.link__cv:hover {
+    color: white;
 }
 
 .link:hover {
-    transition: 0.3s;
-    color: #ed6c87;
-    text-decoration: underline solid #ed6c87;
+    transition: 0.4s;
+    color: white;
+    /* text-decoration: underline solid #ed6c87; */
+    background: #ed6c87;
+    border-radius: 6px;
 }
 
 .homeIcon {
-    color: black;
+    color: white;
     display: flex;
     padding: 20px;
     transition: 0.3s;
@@ -68,7 +87,7 @@ a{
 @media (max-width: 1150px) {
     .links {
         margin: auto;
-        margin-left: 50%;
+        margin-left: 40%;
     }
 } 
 
@@ -97,6 +116,7 @@ a{
         font-size: 0.7em;
         margin: 15px;
         font-weight: 300;
+        margin-left: 0%;
     }
 
     .homeIcon > :first-child {

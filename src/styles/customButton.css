@@ -3,6 +3,7 @@
     color: black;
     border: solid 1px #86d9f3;
     margin: 10px;
+    font-family: Montserrat, sans-serif;
 }
 
 .learnMore > button:hover {
@@ -10,8 +11,9 @@
     background-color: #86d9f3;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 455px) {
     .learnMore > Button {
         margin: 3px;
+        padding: 5px;
     }
 }

@@ -9,10 +9,10 @@ const Project = ({image, alt, href, description, codeDirection, title}) => {
     const [showDescription, setShowDescription] = useState('none');
 
     return ( 
-        <>
+        <div className="project">
             
             <a target='_blank' rel="noopener noreferrer" href={href}>
-                <img src={image} alt={alt} />
+                <img src={image} alt={alt} loading="lazy" decoding="async" />
             </a>
 
             <div><p className="project__title">{title}</p></div>
@@ -36,7 +36,7 @@ const Project = ({image, alt, href, description, codeDirection, title}) => {
             </div>
 
             <GoTopButton />
-        </>
+        </div>
     );
 }
  

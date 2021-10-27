@@ -1,25 +1,29 @@
-.projects > a > img {
+.project > a > img {
     height: 300px;
     width: 500px;
     margin: 20px;
     border-radius: 4px;
-    border: solid 3px #86d9f3;
+    border: solid 4px #ED6C87;
     z-index: 1;
     position: relative;
-    box-shadow: 3.5px 2px 9px 3px #9b9a9a;
 }
 
-.projects > a > img:hover {
+.project > a > img:hover {
     transition: 0.5s;
     opacity: 0.6;
 }
 .description {
+    background-color: #eaf1fe;
+    margin: auto;
     border: solid 4px #ed6c87;
     flex-direction: column;
     padding: 15px;
-    margin: 10%;
-    margin-top: 0px;
+    width: 410px;
+    font-family: Montserrat, sans-serif;
     border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top: 0px;
 }
 
 .text {
@@ -28,7 +32,7 @@
 }
 
 .project__buttons {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     margin-bottom: 35px;
@@ -40,22 +44,29 @@
 }
 
 .project__title {
-    color: #ed6c87;
+    color: white;
     margin: 0%;
     font-style: 'italic';
     font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    width: 430px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3px;
+    border-radius: 4px;
+    backdrop-filter: blur(100px);
 }
 
 
 @media (max-width: 710px) {
-    .projects > a > img {
+    .project > a > img {
         height: 200px;
         width: 350px;
     }
 }
 
 @media (max-width: 500px) {
-    .projects > a > img {
+    .project > a > img {
         height: 170px;
         width: 250px;
         margin-bottom: 10px;

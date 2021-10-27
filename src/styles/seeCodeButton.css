@@ -6,6 +6,7 @@ a {
 .myButton > Button {
     color: white;
     background-color: #160e08;
+    font-family: Montserrat, sans-serif;
 }
 
 .myButton > Button:hover {

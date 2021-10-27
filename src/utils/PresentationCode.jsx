@@ -2,17 +2,21 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/presentationCode.css';
 import TypewriterComponent from 'typewriter-effect';
 import { Congratulations } from './Congratulations';
-import { CONSTRUCTOR, CLASS, DEVELOPER, WRITE } from '../utils/wordsToPresentationCode.js';
+import { CONSTRUCTOR, CLASS, DEVELOPER, WRITE, COMMENT } from '../utils/wordsToPresentationCode.js';
 import Swal from 'sweetalert2'
 
 const PresentationCode = () => {
 
     const [param, setParam] = useState('');
+    const [showComment, setShowComment] = useState('none')
 
     const writeParam = useRef(null);
 
     useEffect(() => {
         writeParam.current.focus();
+        setTimeout(() => {
+            setShowComment('block')
+        }, 5500);
     }, []);
 
 
@@ -67,9 +71,9 @@ const PresentationCode = () => {
                     value={param}
                     onChange={e => setParam(e.target.value)} 
                 /> 
-                
             </div>
             {resultCode()}
+            <div style={{display: showComment, color: '#3E6839'}}>{COMMENT}</div>
         </div>
     );
 }

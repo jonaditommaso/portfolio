@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/about.css';
 import CustomButton from '../utils/CustomButton.jsx';
+import MovingTextAbout from '../utils/MovingTextAbout';
 import GoTopButton from './GoTopButton';
 import Separator from './Separator';
 
@@ -14,28 +15,29 @@ const About = () => {
         <div className="about">
         
             <div className="movingText"> 
-                <div className="movingText__One">{`<Enthusiastic />`}</div>  
-                <div className="movingText__Two">{`<Resilient />`}</div>  
-                <div className="movingText__Three">{`<Creative />`}</div> 
+                <MovingTextAbout movingClass="movingText__One" text={`<Enthusiastic />`} />
+                <MovingTextAbout movingClass="movingText__Two" text={`<Resilient />`} />
+                <MovingTextAbout movingClass="movingText__Three" text={`<Creative />`} />
+                {/* fijarse si directamente puedo pasarle una prop que sea el tiempo que tarda en aparecer */}
             </div>
 
             <div className="content">
-                <img className="image" src="/assets/img/jonathan.png" alt="me"/>
+                <img className="image" src="/assets/img/jonathan.png" alt="me" loading="lazy" decoding="async" />
                 <CustomButton handleClick={setShowDescription} />
             </div>
 
 
             <div className="movingText"> 
-                <div className="movingText__Four">{`<Methodical />`}</div>  
-                <div className="movingText__Five">{`<Competent />`}</div>  
-                <div className="movingText__Six">{`<Engaged />`}</div> 
+                <MovingTextAbout movingClass="movingText__Four" text={`<Methodical />`} />
+                <MovingTextAbout movingClass="movingText__Five" text={`<Competent />`} />
+                <MovingTextAbout movingClass="movingText__Six" text={`<Engaged />`} />
             </div>
            
 
         </div>
 
         <div 
-        className="description" 
+        className="descriptionAboutMe" 
         style={{display: showDescription}}
         >
             <div className="text">
