@@ -26,6 +26,7 @@ const Projects = () => {
                   title="Add products to the cart, buy them and verify your invoice!"
                />
             </div>
+            
             <div className="projects__wrap">
                <Project
                   image="/assets/img/pokemon.png"
@@ -48,7 +49,7 @@ const Projects = () => {
              
         </div>
         <Separator />
-        </>
+      </>
    );
 }
  

@@ -9,13 +9,14 @@ const SeeCodeButton = ({code}) => {
             <a 
                 href={code}
                 target="_blank"
-                rel="noreferrer">
-                    <div className="myButton">
-                        <Button  size="small" variant="contained">
-                            <GitHubIcon fontSize="small"/>
-                            <span className="seeCodeTextButton">SEE CODE</span> 
-                        </Button>
-                    </div>
+                rel="noreferrer"
+            >
+                <div className="myButton">
+                    <Button  size="small" variant="contained">
+                        <GitHubIcon fontSize="small"/>
+                        <span className="seeCodeTextButton">SEE CODE</span> 
+                    </Button>
+                </div>
             </a>
         </>
     );

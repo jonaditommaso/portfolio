@@ -1,80 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/header.css';
 import HomeIcon from '@material-ui/icons/Home';
+import NavigationLinks from './NavigationLinks';
+import { links } from '../utils/links';
 
 const Header = () => {
 
-    const [changeColorProjects, setChangeColorProjects] = useState('');
-    const [changeColorSkills, setChangeColorSkills] = useState('');
-    const [changeColorProfile, setChangeColorProfile] = useState('');
-    const [changeColorCV, setChangeColorCV] = useState('');
-
-    const linkClicked = (path) => {
-        switch (path) {
-            case 'projects':
-                setChangeColorProjects('link__projects');
-                setChangeColorSkills('');
-                setChangeColorProfile('');
-                setChangeColorCV('');
-                break;
-            case 'skills':
-                setChangeColorSkills('link__skills');
-                setChangeColorProjects('');
-                setChangeColorProfile('');
-                setChangeColorCV('');
-                break;
-            case 'profile':
-                setChangeColorProfile('link__profile');
-                setChangeColorSkills('');
-                setChangeColorProjects('');
-                setChangeColorCV('');
-                    break;
-            case 'cv':
-                setChangeColorCV('link__cv');
-                setChangeColorSkills('');
-                setChangeColorProfile('');
-                setChangeColorProjects('');
-                break;
-            case 'home':
-                setChangeColorSkills('');
-                setChangeColorProfile('');
-                setChangeColorProjects('');
-                break;
-            default:
-                break;
-        }
-    }
-
     return ( 
         <div>
-        <div className="header">
-            
-            <Link className="homeIcon" to='/' onClick={() => linkClicked('home')}>
-                <HomeIcon fontSize="large" />
-            </Link>
+            <div className="header">
                 
-            <div className="links" >
-                <Link to='/projects' className="link">
-                    <span className={changeColorProjects} onClick={() => linkClicked('projects')}>PROJECTS</span>
+                <Link className="homeIcon" to='/'>
+                    <HomeIcon fontSize="large" />
                 </Link>
-                <Link to='/skills' className="link">
-                    <span className={changeColorSkills} onClick={() => linkClicked('skills')}>SKILLS</span>
-                </Link>
-                <Link to='/about' className="link">
-                    <span className={changeColorProfile} onClick={() => linkClicked('profile')}>PROFILE</span>
-                </Link>
+                    
+                <div className="links" >
+                    { links.map((link) => <NavigationLinks key={link}>{link}</NavigationLinks>) }
 
-                <a className="link"
-                    href="https://drive.google.com/file/d/1jDv_4S3xEnTIirRuUVy5NhIKPVxBfhls/view?usp=sharing"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <span className={changeColorCV} onClick={() => linkClicked('cv')}>RESUME</span>
-                </a>
+                    <a className="link"
+                        href="https://drive.google.com/file/d/1jDv_4S3xEnTIirRuUVy5NhIKPVxBfhls/view?usp=sharing"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <span>RESUME</span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <hr style={{width: '100%'}} />
+            <hr style={{width: '100%'}} />
         </div>
     );
 }

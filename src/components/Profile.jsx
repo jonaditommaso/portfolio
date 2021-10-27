@@ -5,7 +5,7 @@ import MovingTextAbout from '../utils/MovingTextAbout';
 import GoTopButton from './GoTopButton';
 import Separator from './Separator';
 
-const About = () => {
+const Profile = () => {
 
     const [showDescription, setShowDescription] = useState('none');
 
@@ -66,4 +66,4 @@ const About = () => {
     );
 }
  
-export default About;
+export default Profile;

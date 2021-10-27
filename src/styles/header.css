@@ -25,33 +25,8 @@
     border-radius: 2px;
 }
 
-.link__projects {
+.linkClicked {
     color: #ed6c87;
-} 
-.link__projects:hover {
-    color: white;
-}
-
-.link__skills {
-    color: #ed6c87;
-}
-.link__skills:hover {
-    color: white;
-}
-
-.link__profile {
-    color: #ed6c87;
-}
-.link__profile:hover {
-    color: white;
-}
-
-.link__cv {
-    color: #ed6c87;
-    /* text-decoration: line-through; */
-}
-.link__cv:hover {
-    color: white;
 }
 
 .link:hover {
@@ -67,10 +42,6 @@
     display: flex;
     padding: 20px;
     transition: 0.3s;
-}
-
-.homeActive {
-    color: #ed6c87;
 }
 
 .homeIcon:hover {
